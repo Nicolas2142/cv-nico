@@ -300,3 +300,41 @@ footer p, footer p time {
     margin-top: 10px;
     font-size: 0.8em;
 }
+/* Cours, stage, formation (itacique) */
+.formation p, .stage p, .professional p {
+    font-style: italic;
+    font-size: 0.8em;
+    text-align: left;
+}
+
+/* Background couleur */
+main {
+    background-color: var(--background-color-light);
+}
+
+aside {
+    background-color: var(--background-color-dark);
+}
+
+.update-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.update-info p {
+    margin: 0;
+}
+
+.update-info time {
+    font-weight: lighter;
+    font-size: 0.8em;
+}
+
+body main time {
+    color: var(--highlight-color);
+}
+main .title-date time {
+    color: var(--highlight-color);
+}
