@@ -187,3 +187,85 @@ aside {
     flex-direction: column;
     justify-content: flex-start;
 }
+main {
+    flex: 2;
+    padding: 50px;
+    background-color: var(--background-color-light);
+    box-sizing: border-box;
+    height: auto;
+}
+
+article:hover {
+    background-color: #e3e3e3;
+    border-left: 5px solid #17abb3;
+}
+
+.title-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.title-date time {
+    font-size: var(--font-size-small);
+    color: var(--text-color);
+}
+
+.title-date .year, .title-date .month-year, .title-date .status {
+    margin: 0;
+}
+
+.title-date time span {
+    display: inline-block;
+    margin: 0;
+}
+
+/* Listes dans aside */
+ul {
+    list-style-type: square;
+    margin-bottom: 30px;
+    list-style-position: inside;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: var(--font-size-small);
+}
+
+ul li::marker {
+    color: var(--primary-color);
+}
+
+/* Langues */
+.langues .language {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.langues .language p {
+    font-size: var(--font-size-small);
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.langues .language span {
+    margin-left: auto;
+    color: var(--text-color);
+    font-size: var(--font-size-small);
+    font-weight: 500;
+}
+
+/* Paragraphes dans main */
+.profile p {
+    text-indent: 2em;
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
+main section, main section article {
+    margin-bottom: 1em;
+}
