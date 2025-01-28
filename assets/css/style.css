@@ -134,3 +134,56 @@ header, footer {
 .contact-item a:hover {
     text-decoration: underline;
 }
+/* Compétences */
+.competences .profile {
+    margin-bottom: 20px;
+}
+
+.competence {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+
+.competence p {
+    font-size: var(--font-size-small);
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.stars {
+    display: flex;
+    gap: 5px;
+    margin-left: auto;
+}
+
+.stars i {
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+.stars .far.fa-star {
+    color: var(--primary-color);
+}
+
+/* Mise en page Flexbox */
+.page-layout {
+    display: flex;
+    align-items: flex-start;
+    width: 1160px;
+    margin: 0 auto;
+    align-items: stretch;
+    height: 100%;
+}
+
+aside {
+    flex: 1;
+    padding: 50px;
+    background-color: var(--background-color-dark);
+    box-sizing: border-box;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
