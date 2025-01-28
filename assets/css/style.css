@@ -1,0 +1,340 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    user-select: none;
+}
+/* Définition des couleurs */
+:root {
+    --primary-color: #17abb3; /* Couleur principale */
+    --secondary-color: #ffffff; /* Couleur secondaire */
+    --accent-color: #f4f4f4; /* Couleur d'accent */
+    --text-color: #333333; /* Couleur du texte */
+    --highlight-color: #17abb3; /* Couleur de survol */
+    --background-color-light: #f5f5f5; /* Couleur de fond claire */
+    --background-color-dark: #e3e3e3; /* Couleur de fond sombre */
+    --font-size-small: 1em; /* Taille de police de base */
+    --font-size-medium: 1.5em; /* Taille de police moyenne */
+    --font-size-large: 3em; /* Taille de police large */
+}
+body {
+    font-family: 'raleway', sans-serif;
+}
+
+
+h1, h2, h3 {
+    font-family: 'lato', sans-serif;
+}
+
+h2 {
+    color: var(--primary-color);
+    padding-bottom: 30px;
+    font-size: var(--font-size-medium);
+}
+
+.dev {
+    color: var(--secondary-color); /* h2 du header en blanc */
+    padding: 5px 0;
+}
+
+
+header, footer {
+    width: 1160px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin: 0 auto;
+}
+.header {
+    padding: 20px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-image {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.header-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: var(--secondary-color) 3px solid;
+}
+
+
+
+/* Curseur loupe au survol de l'image */
+.header-image img:hover {
+    cursor: zoom-in;
+}
+
+
+.header-image a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.header-info {
+    flex: 2;
+    text-align: center;
+}
+
+.header-info h1 {
+    font-size: var(--font-size-large);
+    margin: 0;
+}
+
+.header-info h2 {
+    font-size: var(--font-size-medium);
+    margin: 5px 0 10px;
+}
+
+/* Contact */
+.contact-grid {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.contact-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-item .icon {
+    font-size: 1.5em;
+    color: var(--secondary-color);
+}
+
+.contact-item a, 
+.contact-item span {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: var(--font-size-small);
+    display: flex;
+    align-items: center;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+/* Compétences */
+.competences .profile {
+    margin-bottom: 20px;
+}
+
+.competence {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+
+.competence p {
+    font-size: var(--font-size-small);
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.stars {
+    display: flex;
+    gap: 5px;
+    margin-left: auto;
+}
+
+.stars i {
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+.stars .far.fa-star {
+    color: var(--primary-color);
+}
+
+/* Mise en page Flexbox */
+.page-layout {
+    display: flex;
+    align-items: flex-start;
+    width: 1160px;
+    margin: 0 auto;
+    align-items: stretch;
+    height: 100%;
+}
+
+aside {
+    flex: 1;
+    padding: 50px;
+    background-color: var(--background-color-dark);
+    box-sizing: border-box;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+main {
+    flex: 2;
+    padding: 50px;
+    background-color: var(--background-color-light);
+    box-sizing: border-box;
+    height: auto;
+}
+
+article:hover {
+    background-color: #e3e3e3;
+    border-left: 5px solid #17abb3;
+}
+
+.title-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.title-date time {
+    font-size: var(--font-size-small);
+    color: var(--text-color);
+}
+
+.title-date .year, .title-date .month-year, .title-date .status {
+    margin: 0;
+}
+
+.title-date time span {
+    display: inline-block;
+    margin: 0;
+}
+
+/* Listes dans aside */
+ul {
+    list-style-type: square;
+    margin-bottom: 30px;
+    list-style-position: inside;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: var(--font-size-small);
+}
+
+ul li::marker {
+    color: var(--primary-color);
+}
+
+/* Langues */
+.langues .language {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.langues .language p {
+    font-size: var(--font-size-small);
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.langues .language span {
+    margin-left: auto;
+    color: var(--text-color);
+    font-size: var(--font-size-small);
+    font-weight: 500;
+}
+
+/* Paragraphes dans main */
+.profile p {
+    text-indent: 2em;
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
+main section, main section article {
+    margin-bottom: 1em;
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media a {
+    color: var(--accent-color);
+    display: inline-block;
+    margin: 0 2px;
+    transition: opacity 0.3s ease;
+}
+
+.social-media a i {
+    font-size: 30px;
+}
+
+.social-media a:hover {
+    opacity: 0.7;
+}
+
+footer p, footer p time {
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+/* Cours, stage, formation (itacique) */
+.formation p, .stage p, .professional p {
+    font-style: italic;
+    font-size: 0.8em;
+    text-align: left;
+}
+
+/* Background couleur */
+main {
+    background-color: var(--background-color-light);
+}
+
+aside {
+    background-color: var(--background-color-dark);
+}
+
+.update-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.update-info p {
+    margin: 0;
+}
+
+.update-info time {
+    font-weight: lighter;
+    font-size: 0.8em;
+}
+
+body main time {
+    color: var(--highlight-color);
+}
+main .title-date time {
+    color: var(--highlight-color);
+}
