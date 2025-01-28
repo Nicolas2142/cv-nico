@@ -19,3 +19,30 @@
     --font-size-medium: 1.5em; /* Taille de police moyenne */
     --font-size-large: 3em; /* Taille de police large */
 }
+body {
+    font-family: 'raleway', sans-serif;
+}
+
+
+h1, h2, h3 {
+    font-family: 'lato', sans-serif;
+}
+
+h2 {
+    color: var(--primary-color);
+    padding-bottom: 30px;
+    font-size: var(--font-size-medium);
+}
+
+.dev {
+    color: var(--secondary-color); /* h2 du header en blanc */
+    padding: 5px 0;
+}
+
+
+header, footer {
+    width: 1160px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin: 0 auto;
+}
