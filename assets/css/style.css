@@ -6,3 +6,16 @@
     box-sizing: border-box;
     user-select: none;
 }
+/* Définition des couleurs */
+:root {
+    --primary-color: #17abb3; /* Couleur principale */
+    --secondary-color: #ffffff; /* Couleur secondaire */
+    --accent-color: #f4f4f4; /* Couleur d'accent */
+    --text-color: #333333; /* Couleur du texte */
+    --highlight-color: #17abb3; /* Couleur de survol */
+    --background-color-light: #f5f5f5; /* Couleur de fond claire */
+    --background-color-dark: #e3e3e3; /* Couleur de fond sombre */
+    --font-size-small: 1em; /* Taille de police de base */
+    --font-size-medium: 1.5em; /* Taille de police moyenne */
+    --font-size-large: 3em; /* Taille de police large */
+}
